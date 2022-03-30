@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    color: white;
+    background-color: #692DFF;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo__uno {
+    font-size: 70px;
+    line-height: 1;
+}
+
+.titulo__dos {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 200;
+    color: black;
+    padding: 40px;
+    text-align: justify;
+}
+
+.menu li{
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 10px 10px;
+    top: 0px;
+    left: 670px;
+    background-color: white;
+}
+
+.menu li a{
+    text-decoration: none;
+    color:black;
+    display: inline-block;
+    background-color: white;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+}
+
+.menu li:hover > ul{
+    display:block;
+    top: 40px;
+    right: 665px;
+}
+
+.menu li a:hover{
+    color: rgb(201, 201, 201);
+}
+
+.logoHipnosia {
+    top: 5px;
+    left: 5px;
+    position: absolute;
+}
+
+header {
+    background-image: url(../multimedia/fondoarriba.png);
+}
+
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.redes {
+    display: inline;
+    bottom: 10px;
+    left: 10 px;
+}
+
+.mapa {
+    padding: 10px;
+    margin: 5px;
+}
+
+.behance {
+    text-decoration: none;
+    color:rgb(96, 51, 168);
+}   
+
+.hoolahoop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.hoolahoop > li {
+    padding: 20px;
+}
+
+.subtitulo {
+    color: white;
+    background-color: #000000;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.cajas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    margin: 10px;
+}
+
+.cajas > li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.redessociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redessociales > a {
+    padding: 10px;
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4%;
+    padding-top: 2%;
+}
+
+.imgfooter {
+    height: 30px;
+    width: auto;
+
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+footer ul > li {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+

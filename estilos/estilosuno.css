@@ -1,0 +1,738 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    /*display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: .08fr .3fr 1fr .4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "header"
+        "section"
+        "main"
+        "footer";
+        */
+}
+
+/* HEADER - BARRA DE MENÚ */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+@media screen and (min-width: 756px) {
+    .menu {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logoHipnosia>img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 756px) {
+    nav {
+        justify-content: end;
+    }
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    padding: 6px 6px;
+    background-color: white;
+}
+
+@media screen and (min-width: 400px) {
+    .menu li {
+        padding: 8px 6px;
+        right: 5px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .menu li {
+        padding: 8px 6px;
+        right: 5px;
+        font-size: 2.5rem;
+    }
+
+    .logoHipnosia {
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 756px) {
+    .menu li {
+        padding: 7px 6px;
+        right: 5px;
+        font-size: 2rem;
+    }
+
+    .logoHipnosia {
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu li {
+        padding: 7px 19px;
+        right: 5px;
+        font-size: 2.5rem;
+    }
+
+    .logoHipnosia {
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 2150px) {
+    .menu li {
+        padding: 12px 12px;
+        right: 7px;
+        font-size: 5rem;
+    }
+
+    .logoHipnosia {
+        margin-right: auto;
+    }
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background-color: white;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
+
+.menu li a:hover {
+    color: rgb(201, 201, 201);
+}
+
+/*SECTION - TITULO PRINCIPAL*/
+section {
+    display: flex;
+}
+
+.sectionservicios {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: justify;
+    margin: 2px;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 8%;
+    padding-bottom: 7%;
+}
+
+.sectionservicios .p {
+    font-size: 2rem;
+}
+
+section .subtitulos {
+    font-size: 1.2rem;
+    justify-self: right;
+    color: #692dff;
+    font-weight: 700;
+    padding-bottom: 0.5%;
+}
+
+@media screen and (min-width: 756px) {
+    .sectionservicios {
+        padding-right: 5%;
+        padding-bottom: 5%;
+        display: flex;
+    }
+
+    section .subtitulos {
+        font-size: 1.5rem;
+        justify-self: right;
+        color: #692dff;
+        font-weight: 700;
+        padding-bottom: 0.5%;
+    }
+}
+
+section .pdos {
+    color: #692dff;
+}
+
+@media screen and (min-width: 375px) {
+    .sectionservicios {
+        padding-right: 16%;
+        padding-top: 8%;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .sectionservicios {
+        padding-right: 20%;
+    }
+}
+
+@media screen and (min-width: 756px) {
+    .sectionservicios {
+        padding-right: 5%;
+        padding-top: 3%;
+    }
+
+    .sectionservicios .p {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sectionservicios .p {
+        font-size: 4.5rem;
+        padding-right: 10%;
+    }
+
+    section .subtitulos {
+        font-size: 1.8rem;
+        justify-self: right;
+        color: #692dff;
+        font-weight: 700;
+        padding-bottom: 0.5%;
+    }
+}
+
+@media screen and (min-width: 2150px) {
+    .sectionservicios .p {
+        font-size: 9rem;
+    }
+}
+
+mark {
+    background-color: #692dff;
+    padding-left: 1%;
+    padding-right: 0.5%;
+    color: white;
+    font-weight: 600;
+    border: 3px solid #692dff;
+    border-radius: 10px;
+}
+
+main {
+    grid-area: main;
+}
+
+.imagenesPrincipales {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 2%;
+}
+
+.imagenesPrincipales div img {
+    height: 200px;
+    width: auto;
+    display: flex;
+}
+
+.imagenesPrincipales>div {
+    justify-items: center;
+    align-items: center;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.descripcionImagen {
+    color: #a3a3a3;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 400px) {
+    .imagenesPrincipales {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin: 2%;
+    }
+
+    .imagenesPrincipales div img {
+        height: 250px;
+        width: auto;
+        display: flex;
+        border-radius: 5%;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+}
+
+.imagenesPrincipales>div {
+    padding-bottom: 5%;
+    justify-items: center;
+    align-items: center;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.imagenesPrincipales>div img:hover {
+    transform: scale(1.05);
+    padding-bottom: 2%;
+}
+
+/*
+.imagenuno {
+    padding-right: 1%;
+}
+
+.imagendos {
+    padding-right: 1%;
+}
+
+.imagencuatro {
+    padding-right: 1%;
+}
+
+.imagencinco {
+    padding-right: 1%;
+}
+
+.imagensiete {
+    padding-right: 1%;
+}
+
+.imagenocho {
+    padding-right: 1%;
+}
+*/
+
+@media screen and (min-width: 1050px) {
+    .imagenesPrincipales div img {
+        height: 280px;
+        width: auto;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1787px) {
+    .imagenesPrincipales div img {
+        height: 350px;
+        width: auto;
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+    .imagenesPrincipales div img {
+        height: 550px;
+        width: auto;
+        display: flex;
+    }
+
+    .imagenesPrincipales p {
+        font-size: 4.3rem;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4%;
+    padding-top: 2%;
+}
+
+.imgfooter {
+    height: 30px;
+    width: auto;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+footer ul>li {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*MAIN SERVICIOS */
+
+main .p {
+    float: right;
+    font-size: 2rem;
+    margin: 2px;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 8%;
+    padding-bottom: 7%;
+    width: 50%;
+    height: auto;
+}
+
+main div>.pBranding {
+    display: flex;
+    flex-direction: row-reverse;
+
+    font-size: 2rem;
+    margin: 2px;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 8%;
+    padding-bottom: 7%;
+    width: 50%;
+    text-align: justify;
+}
+
+@media screen and (min-width: 756px) {
+    main .p {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main .p {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 2150px) {
+    .main .p {
+        font-size: 9rem;
+    }
+}
+
+section ul {
+    list-style: none;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    display: flex;
+}
+
+.hoolahoop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 2%;
+}
+
+.hoolahoop ul li img {
+    height: 200px;
+    width: auto;
+    display: flex;
+}
+
+.hoolahoop>li {
+    justify-items: center;
+    align-items: center;
+}
+
+.descripcionPadre {
+    display: flex;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 2%;
+    align-items: center;
+}
+
+.descripcionUno {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2px;
+    font-size: 4.3rem;
+    font-weight: 700;
+    padding-right: 7%;
+    text-align: left;
+}
+
+@media (min-width: 900px) {
+    .descripcionUno {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+.descripcionDos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 2.4rem;
+    justify-self: right;
+    color: #313131;
+    padding-bottom: 0.5%;
+    text-align: justify;
+}
+
+@media (min-width: 900px) {
+    .descripcionDos {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+.subtitulos {
+    margin-left: 6%;
+    font-size: 2rem;
+    justify-self: right;
+    display: flex;
+    color: #692dff;
+    font-weight: 700;
+}
+
+.titulos {
+    font-size: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    margin-bottom: 5%;
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation-duration: 8s;
+}
+
+.tituloUno {
+    font-size: 5.4rem;
+}
+
+em {
+    font-style: italic;
+}
+
+/*FORMS*/
+
+.divForm_Imagen {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.divForm_titulo {
+    margin-left: 8%;
+    width: 60%;
+}
+
+.divForm_titulo a {
+    color: currentColor;
+}
+
+.divForm {
+    display: flex;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: #000000;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: #000000;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:focus::placeholder,
+textarea::focus:placeholder {
+    color: #000000;
+}
+
+input::-ms-placeholder,
+textarea::-ms-placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
+    color: #000000;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
+    color: #000000;
+}
+
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
+    color: #000000;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+    color: #000000;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:hover:focus::-ms-placeholder,
+textarea:hover::focus:-ms-placeholder {
+    color: #000000;
+}
+
+#form {
+    position: relative;
+    width: 750px;
+    margin: 50px auto 100px auto;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+input {
+    font-size: 1.8rem;
+    width: 720px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+
+    background: transparent;
+    outline: none;
+    color: #202020;
+
+    border: solid 1px #000000;
+    border-bottom: none;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+    background: #f3f3f3;
+    color: #000000;
+}
+
+textarea {
+    width: 720px;
+    max-width: 720px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+
+    background: transparent;
+    outline: none;
+
+    color: #202020;
+    font-size: 1.8rem;
+    font-family: "Poppins", sans-serif;
+
+
+    border: solid 1px #000000;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+    background: #f3f3f3;
+    color: #000000;
+}
+
+#submit {
+    width: 752px;
+
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+
+    font-size: 1.8rem;
+    color: #202020;
+    font-family: "Poppins", sans-serif;
+
+    outline: none;
+    cursor: pointer;
+
+    border: solid 1px #000000;
+    border-top: none;
+}
+
+#submit:hover {
+    color: #f3f3f3;
+    background: #692dff;
+}
+
+.imagenForm {
+    display: flex;
+    width: 400px;
+    height: auto;
+    margin: 2%;
+    padding-left: 4%;
+}
