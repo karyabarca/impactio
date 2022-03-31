@@ -52,8 +52,8 @@ nav {
     display: inline-block;
     position: relative;
     font-family: "Poppins", sans-serif;
-    font-size: 1.5rem;
-    padding: 6px 6px;
+    font-size: 1.7rem;
+    padding: 3px 3px;
     background-color: white;
 }
 
@@ -144,10 +144,10 @@ section {
     align-content: center;
     text-align: justify;
     margin: 2px;
-    padding-top: 3%;
     padding-left: 5%;
-    padding-right: 8%;
-    padding-bottom: 7%;
+    padding-bottom: 3%;
+    padding-right: 7%;
+    padding-top: 1%;
 }
 
 .sectionservicios .p {
@@ -465,11 +465,11 @@ ul {
 }
 
 .descripcionPadre {
-    display: flex;
     margin-left: 6%;
     margin-right: 6%;
     margin-bottom: 2%;
     align-items: center;
+    flex-direction: row;
 }
 
 .descripcionUno {
@@ -477,48 +477,39 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 2px;
-    font-size: 4.3rem;
+    font-size: 2.4rem;
     font-weight: 700;
     padding-right: 7%;
     text-align: left;
 }
 
-@media (min-width: 900px) {
-    .descripcionUno {
-        flex-basis: 50%;
-        max-width: 50%;
-    }
-}
 
 .descripcionDos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     justify-self: right;
     color: #313131;
     padding-bottom: 0.5%;
     text-align: justify;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
 
-@media (min-width: 900px) {
-    .descripcionDos {
-        flex-basis: 50%;
-        max-width: 50%;
-    }
-}
 
 .subtitulos {
     margin-left: 6%;
-    font-size: 2rem;
+    font-size: 1.4rem;
     justify-self: right;
     display: flex;
     color: #692dff;
     font-weight: 700;
+    margin-top: 5%;
 }
 
 .titulos {
-    font-size: 6rem;
+    font-size: 4rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -537,16 +528,128 @@ em {
     font-style: italic;
 }
 
+@media (min-width: 900px) {
+    .descripcionUno {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .descripcionPadre {
+        display: flex;
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-bottom: 2%;
+        align-items: center;
+    }
+
+    .descripcionUno {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 2px;
+        font-size: 4.3rem;
+        font-weight: 700;
+        padding-right: 7%;
+        text-align: left;
+    }
+    
+    .descripcionDos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 2.4rem;
+        justify-self: right;
+        color: #313131;
+        padding-bottom: 0.5%;
+        text-align: justify;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    
+}
+
+@media (min-width: 900px) {
+    .descripcionDos {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .subtitulos {
+        margin-left: 6%;
+        font-size: 2rem;
+        justify-self: right;
+        display: flex;
+        color: #692dff;
+        font-weight: 700;
+        margin-top: 1%;
+    }
+    
+
+    .titulos {
+        font-size: 6rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-weight: 800;
+        margin-bottom: 5%;
+        display: inline-block;
+        margin: 0 0.5rem;
+        animation-duration: 8s;
+    }
+    
+
+}
+
 /*FORMS*/
 
-.divForm_Imagen {
+.divForm_Todo {
     display: flex;
     width: 100%;
     align-items: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-right: 5%;
 }
+
+.divForm_p {
+    width: 80%;
+}
+
+.divForm_titulo {
+    margin-left: 7%;
+    margin-right: 5%;
+    width: 100%;
+}
+
+
+
+@media (min-width: 370px) {
 .divForm_titulo {
     margin-left: 8%;
-    width: 60%;
+}
+
+}
+@media (min-width: 700px) {
+
+    .divForm_Todo {
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    .divForm_titulo {
+        margin-left: 8%;
+        width: 60%;
+    }
+
+    .divForm_p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .divForm_titulo {
+        margin-left: 6%;
+    }
 }
 
 .divForm_titulo a {
@@ -556,6 +659,7 @@ em {
 .divForm {
     display: flex;
 }
+
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
@@ -649,16 +753,15 @@ textarea:hover::focus:-ms-placeholder {
 
 #form {
     position: relative;
-    width: 750px;
-    margin: 50px auto 100px auto;
+    width: 250px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
+    font-size: 1.2rem;
 }
 
 input {
-    font-size: 1.8rem;
-    width: 720px;
-    height: 50px;
+    width: 240px;
+    height: 30px;
     padding: 0px 15px 0px 15px;
 
     background: transparent;
@@ -680,17 +783,15 @@ input:hover {
 }
 
 textarea {
-    width: 720px;
-    max-width: 720px;
-    height: 110px;
-    max-height: 110px;
+    width: 240px;
+    height: 70px;
+    max-height: 70px;
     padding: 15px;
 
     background: transparent;
     outline: none;
 
     color: #202020;
-    font-size: 1.8rem;
     font-family: "Poppins", sans-serif;
 
 
@@ -707,13 +808,13 @@ textarea:hover {
     color: #000000;
 }
 
+
 #submit {
-    width: 752px;
+    width: 272px;
 
     padding: 0;
     margin: -5px 0px 0px 0px;
 
-    font-size: 1.8rem;
     color: #202020;
     font-family: "Poppins", sans-serif;
 
@@ -724,15 +825,167 @@ textarea:hover {
     border-top: none;
 }
 
+
 #submit:hover {
     color: #f3f3f3;
     background: #692dff;
 }
 
 .imagenForm {
+    display: none;
+}
+
+@media (min-width: 372px) {
+    #form {
+        position: relative;
+        width: 300px;
+        font-size: 1.2rem;
+    }
+
+    input {
+        width: 300px;
+        height: 40px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    textarea {
+        width: 300px;
+        height: 80px;
+        max-height: 80px;
+        padding: 15px;
+    }
+
+    #submit {
+        width: 332px;
+    }
+}
+
+
+@media (min-width: 400px) {
+    #form {
+        position: relative;
+        width: 350px;
+        font-size: 1.2rem;
+    }
+
+    input {
+        width: 340px;
+        height: 40px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    textarea {
+        width: 340px;
+        height: 80px;
+        max-height: 80px;
+        padding: 15px;
+    }
+
+    #submit {
+        width: 372px;
+    }
+}
+
+
+@media (min-width: 700px) {
+    #form {
+        position: relative;
+        width: 620px;
+        font-size: 1.2rem;
+    }
+
+    input {
+        width: 620px;
+        height: 40px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    textarea {
+        width: 620px;
+        height: 80px;
+        max-height: 80px;
+        padding: 15px;
+    }
+
+    #submit {
+        width: 652px;
+    }
+}
+
+
+@media (min-width: 900px) {
+    #form {
+        width: 750px;
+        margin: 50px auto 100px auto;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+    }
+
+    input {
+        font-size: 1.8rem;
+        width: 720px;
+        height: 50px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    textarea {
+        width: 720px;
+        max-width: 720px;
+        height: 110px;
+        max-height: 110px;
+        padding: 15px;
+
+        background: transparent;
+        outline: none;
+
+        color: #202020;
+        font-size: 1.8rem;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #submit {
+        width: 752px;
+
+        padding: 0;
+        margin: -5px 0px 0px 0px;
+
+        font-size: 1.8rem;
+        color: #202020;
+        font-family: "Poppins", sans-serif;
+
+        outline: none;
+        cursor: pointer;
+
+        border: solid 1px #000000;
+        border-top: none;
+    }
+
+    .imagenForm {
+        display: flex;
+        width: 400px;
+        height: auto;
+        margin: 2%;
+        padding-left: 4%;
+    }
+}
+
+
+@media (min-width: 1020px) {
+.imagenForm {
     display: flex;
     width: 400px;
     height: auto;
     margin: 2%;
-    padding-left: 4%;
+    padding-left: 20%;
+    padding-right: 9%;
+    margin-right: 5%;
+}
+}
+
+@media (min-width: 1820px) {
+.imagenForm {
+    width: 600px;
+    height: auto;
+    padding-left: 35%;
+}
 }
