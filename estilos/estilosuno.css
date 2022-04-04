@@ -10,132 +10,7 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    /*display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: .08fr .3fr 1fr .4fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        "header"
-        "section"
-        "main"
-        "footer";
-        */
 }
-
-/* HEADER - BARRA DE MENÚ */
-
-/*nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 2%;
-}
-
-@media screen and (min-width: 756px) {
-    .menu {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .logoHipnosia>img {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 756px) {
-    nav {
-        justify-content: end;
-    }
-}
-
-.menu li {
-    display: inline-block;
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.7rem;
-    padding: 3px 3px;
-    background-color: white;
-}
-
-@media screen and (min-width: 400px) {
-    .menu li {
-        padding: 8px 6px;
-        right: 5px;
-        font-size: 2rem;
-    }
-}
-
-@media screen and (min-width: 500px) {
-    .menu li {
-        padding: 8px 6px;
-        right: 5px;
-        font-size: 2.5rem;
-    }
-
-    .logoHipnosia {
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 756px) {
-    .menu li {
-        padding: 7px 6px;
-        right: 5px;
-        font-size: 2rem;
-    }
-
-    .logoHipnosia {
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .menu li {
-        padding: 7px 19px;
-        right: 5px;
-        font-size: 2.5rem;
-    }
-
-    .logoHipnosia {
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 2150px) {
-    .menu li {
-        padding: 12px 12px;
-        right: 7px;
-        font-size: 5rem;
-    }
-
-    .logoHipnosia {
-        margin-right: auto;
-    }
-}
-
-.menu li a {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    background-color: white;
-}
-
-.menu li ul {
-    display: none;
-    position: absolute;
-}
-
-.menu li:hover>ul {
-    display: block;
-}
-
-.menu li a:hover {
-    color: rgb(201, 201, 201);
-}
-
-*/
 
 nav .navPropioDiv {
     justify-content: center;
@@ -176,8 +51,9 @@ section {
 }
 
 .sectionservicios .p {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-top: 2%;
+    text-align: center;
 }
 
 section .subtitulos {
@@ -208,21 +84,25 @@ section .pdos {
     color: #692dff;
 }
 
-/*
+
 @media screen and (min-width: 375px) {
-    .sectionservicios {
-        padding-right: 16%;
-        padding-top: 8%;
+
+    .sectionservicios .p {
+        font-size: 2rem;
     }
 }
-
 
 @media screen and (min-width: 425px) {
-    .sectionservicios {
-        padding-right: 20%;
+
+    .sectionservicios .p {
+        font-size: 2.4rem;
     }
 }
-*/
+
+ol, ul {
+    padding-left: 0rem;
+}
+
 @media screen and (min-width: 756px) {
     .sectionservicios {
         padding-right: 5%;
@@ -238,6 +118,8 @@ section .pdos {
     .sectionservicios .p {
         font-size: 4.5rem;
         padding-right: 10%;
+        text-align: left;
+        padding-left: 5%;
     }
 
     section .subtitulos {
@@ -257,11 +139,9 @@ section .pdos {
 
 mark {
     background-color: #692dff;
-    padding-left: 1%;
-    padding-right: 0.5%;
     color: white;
     font-weight: 600;
-    border: 3px solid #692dff;
+    /*border: 1px solid #692dff;*/
     border-radius: 10px;
 }
 
@@ -302,8 +182,7 @@ p {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-
-        align-content: center;
+        justify-content: space-evenly;
     }
 
     .imagenesPrincipales div img {
