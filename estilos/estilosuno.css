@@ -151,7 +151,8 @@ nav .navPropio {
     padding: 10px 10px;
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
     color: #692dff;
 }
 
@@ -167,13 +168,10 @@ section {
 
 .sectionservicios {
     display: flex;
-    justify-content: center;
     align-content: center;
-    text-align: justify;
+    text-align: center;
     margin: 2px;
-    padding-left: 5%;
     padding-bottom: 3%;
-    padding-right: 7%;
     padding-top: 1%;
 }
 
@@ -210,6 +208,7 @@ section .pdos {
     color: #692dff;
 }
 
+/*
 @media screen and (min-width: 375px) {
     .sectionservicios {
         padding-right: 16%;
@@ -217,12 +216,13 @@ section .pdos {
     }
 }
 
+
 @media screen and (min-width: 425px) {
     .sectionservicios {
         padding-right: 20%;
     }
 }
-
+*/
 @media screen and (min-width: 756px) {
     .sectionservicios {
         padding-right: 5%;
@@ -322,8 +322,6 @@ p {
     padding-bottom: 5%;
     justify-items: center;
     align-items: center;
-    padding-right: 1%;
-    padding-left: 1%;
 }
 
 .imagenesPrincipales>div img:hover {
@@ -466,9 +464,31 @@ ul {
 }
 
 .descripcionPadre {
-    margin-left: 6%;
-    margin-right: 6%;
-    margin-bottom: 2%;
+    margin: 1%;
+    align-items: center;
+}
+
+.descripcionUno {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: left;
+    padding: 2%;
+}
+
+.descripcionDos {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.8rem;
+    color: #313131;
+    padding: 2%;
+    text-align: justify;
+}
+
+/*
+.descripcionPadre {
+    margin: 1%;
     align-items: center;
     flex-direction: row;
 }
@@ -477,10 +497,9 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 2px;
+    margin: 10%;
     font-size: 2.4rem;
     font-weight: 700;
-    padding-right: 7%;
     text-align: left;
 }
 
@@ -490,15 +509,12 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 1.8rem;
-    justify-self: right;
     color: #313131;
     padding-bottom: 0.5%;
     text-align: justify;
-    margin-bottom: 10%;
-    margin-top: 10%;
-    padding-right: 11%;
+    margin: 10%;
 }
-
+*/
 
 .subtitulos {
     margin-left: 6%;
@@ -512,7 +528,6 @@ ul {
 
 .titulos {
     font-size: 4rem;
-    width: 100%;
     display: flex;
     justify-content: center;
     font-weight: 800;
@@ -522,6 +537,7 @@ ul {
     animation-duration: 2s;
     text-align: center;
 }
+
 .titulosContacto {
     font-size: 4rem;
     width: 100%;
@@ -545,51 +561,11 @@ em {
 
 @media (min-width: 900px) {
     .descripcionUno {
-        flex-basis: 50%;
-        max-width: 50%;
+        font-size: 3.6rem;
     }
-
-    .descripcionPadre {
-        display: flex;
-        margin-left: 6%;
-        margin-right: 6%;
-        margin-bottom: 2%;
-        align-items: center;
-    }
-
-    .descripcionUno {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 2px;
-        font-size: 4.3rem;
-        font-weight: 700;
-        padding-right: 7%;
-        text-align: left;
-    }
-
-    .descripcionDos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        font-size: 2.4rem;
-        justify-self: right;
-        color: #313131;
-        padding-bottom: 0.5%;
-        text-align: justify;
-        margin-bottom: 2%;
-        margin-top: 2%;
-
-    }
-
-
 }
 
 @media (min-width: 900px) {
-    .descripcionDos {
-        flex-basis: 50%;
-        max-width: 50%;
-    }
 
     .subtitulos {
         margin-left: 6%;
@@ -614,7 +590,7 @@ em {
         animation-duration: 2s;
     }
 
-    
+
     .titulosContacto {
         font-size: 6rem;
         width: 100%;
