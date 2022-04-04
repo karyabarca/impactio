@@ -486,36 +486,6 @@ ul {
     text-align: justify;
 }
 
-/*
-.descripcionPadre {
-    margin: 1%;
-    align-items: center;
-    flex-direction: row;
-}
-
-.descripcionUno {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 10%;
-    font-size: 2.4rem;
-    font-weight: 700;
-    text-align: left;
-}
-
-
-.descripcionDos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 1.8rem;
-    color: #313131;
-    padding-bottom: 0.5%;
-    text-align: justify;
-    margin: 10%;
-}
-*/
-
 .subtitulos {
     margin-left: 6%;
     font-size: 1.4rem;
