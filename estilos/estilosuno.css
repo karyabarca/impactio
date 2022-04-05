@@ -35,6 +35,23 @@ nav .navPropio {
     flex-grow: unset;
 }
 
+
+.sectionIndex {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    margin: 2px;
+    padding-bottom: 3%;
+    padding-top: 1%;
+}
+
+.sectionIndex .p {
+    font-size: 1.7rem;
+    margin-top: 2%;
+    text-align: center;
+}
+
+
 /*SECTION - TITULO PRINCIPAL*/
 section {
     display: flex;
@@ -65,9 +82,15 @@ section .subtitulos {
 }
 
 @media screen and (min-width: 756px) {
-    .sectionservicios {
+    .sectionIndex {
         padding-right: 5%;
         padding-bottom: 5%;
+        display: flex;
+    }
+
+    .sectionservicios {
+        padding-right: 5%;
+        padding-bottom: 0%;
         display: flex;
     }
 
@@ -94,16 +117,31 @@ section .pdos {
 
 @media screen and (min-width: 425px) {
 
+    .sectionIndex.p {
+        font-size: 2.4rem;
+    }
+
     .sectionservicios .p {
         font-size: 2.4rem;
     }
 }
 
-ol, ul {
+ol,
+ul {
     padding-left: 0rem;
 }
 
 @media screen and (min-width: 756px) {
+
+    .sectionIndex {
+        padding-right: 5%;
+        padding-top: 3%;
+    }
+
+    .sectionIndex .p {
+        font-size: 2.5rem;
+    }
+
     .sectionservicios {
         padding-right: 5%;
         padding-top: 3%;
@@ -115,6 +153,14 @@ ol, ul {
 }
 
 @media screen and (min-width: 1024px) {
+
+    .sectionIndex .p {
+        font-size: 4.5rem;
+        padding-right: 10%;
+        text-align: left;
+        padding-left: 5%;
+    }
+
     .sectionservicios .p {
         font-size: 4.5rem;
         padding-right: 10%;
@@ -131,7 +177,24 @@ ol, ul {
     }
 }
 
+@media screen and (min-width: 1440px) {
+
+    .sectionIndex {
+        padding-bottom: 0%;
+    }
+
+    .sectionservicios {
+        padding-bottom: 0%;
+    }
+}
+
+
 @media screen and (min-width: 2150px) {
+
+    .sectionIndex .p {
+        font-size: 9rem;
+    }
+
     .sectionservicios .p {
         font-size: 9rem;
     }
@@ -843,5 +906,109 @@ textarea:hover {
         width: 600px;
         height: auto;
         padding-left: 35%;
+    }
+}
+
+
+/* MAIN SERVICIOS */
+
+.mainServicios {
+    margin: 3%;
+}
+
+.sectionuno-mainServicios {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.sectiondos-mainServicios {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+
+.titulos-mainServicios {
+    font-size: 3rem;
+
+}
+
+.divuno-mainServicios {
+    padding: 2%;
+}
+
+.divdos-mainServicios {
+    padding: 2%;
+}
+
+.parrafos-mainServicios {
+    font-size: 1.2rem;
+    text-align: justify;
+
+}
+
+.img-mainServicios>img {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+.img-mainServicios {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 1024px) {
+    .titulos-mainServicios {
+        font-size: 4.5rem;
+
+    }
+
+    .parrafos-mainServicios {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .divuno-mainServicios {
+        padding: 2%;
+        padding-left: 10%;
+    }
+
+    .divdos-mainServicios {
+        padding: 2%;
+        padding-right: 10%;
+    }
+
+    .titulos-mainServicios {
+        font-size: 4rem;
+
+    }
+
+    .parrafos-mainServicios {
+        font-size: 2.3rem;
+    }
+
+    .img-mainServicios>img {
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media (min-width: 2500px) {
+    .titulos-mainServicios {
+        font-size: 6rem;
+
+    }
+
+    .parrafos-mainServicios {
+        font-size: 4rem;
     }
 }
