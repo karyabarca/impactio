@@ -1,0 +1,109 @@
+.sectionservicios {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    margin: 2px;
+    padding-bottom: 3%;
+    padding-top: 1%;
+
+    div {
+
+        .subtitulos {
+            margin-left: 6%;
+            justify-self: right;
+            display: flex;
+            color: #692dff;
+            font-weight: 700;
+            margin-top: 5%;
+            font-size: 1.2rem;
+            padding-bottom: 0.5%;
+        }
+
+        .p {
+            font-size: 3rem;
+            margin-top: 2%;
+            text-align: left;
+        }
+        }
+    }
+
+
+
+.mainServicios {
+    margin: 3%;
+
+    .sectionuno-mainServicios {
+        display: flex;
+        align-items: center;
+        padding-bottom: 2%;
+
+        .divuno-mainServicios {
+            padding: 2%;
+
+            .titulos-mainServicios {
+                font-size: 3rem;
+
+            }
+
+            .parrafos-mainServicios {
+                font-size: 1.2rem;
+                text-align: justify;
+
+            }
+        }
+
+
+        .img-mainServicios {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 250px;
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                padding: 2px;
+            }
+
+        }
+
+    }
+
+
+    .sectiondos-mainServicios {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-bottom: 2%;
+
+        .divdos-mainServicios {
+            padding: 2%;
+
+            .titulos-mainServicios {
+                font-size: 3rem;
+
+            }
+
+            .parrafos-mainServicios {
+                font-size: 1.2rem;
+                text-align: justify;
+
+            }
+        }
+
+        .img-mainServicios {
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 250px;
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                padding: 2px;
+            }
+
+        }
+    }
+
+}

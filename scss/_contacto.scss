@@ -1,0 +1,460 @@
+.sectionContacto {
+
+    article {
+        width: 100%;
+
+
+        .divForm_titulo {
+            margin-left: 7%;
+            margin-right: 5%;
+            width: 100%;
+            margin-top: 3%;
+
+            div {
+                h2 {
+
+                    .titulosContacto {
+                        font-size: 4rem;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        font-weight: 800;
+                        margin-bottom: 10%;
+                        display: inline-block;
+                        margin: 0 0.5rem;
+                        animation-duration: 2s;
+                    }
+
+                }
+
+                .divForm_p {
+                    width: 80%;
+
+                    strong {
+
+                        a {
+                            color: currentColor;
+                        }
+                    }
+
+                }
+
+                .imagenForm {
+                    display: none;
+                }
+            }
+
+
+            .divForm_Todo {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                margin-top: 6%;
+                margin-bottom: 6%;
+                margin-right: 5%;
+
+                .divForm {
+                    display: flex;
+
+                    #form {
+                        position: relative;
+                        width: 280px;
+                        font-family: "Poppins", sans-serif;
+                        font-style: normal;
+                        font-size: 1.2rem;
+
+                        input {
+                            width: 280px;
+                            height: 30px;
+                            padding: 0px 15px 0px 15px;
+
+                            background: transparent;
+                            outline: none;
+                            color: #202020;
+
+                            border: solid 1px #000000;
+                            border-bottom: none;
+
+                            transition: all 0.3s ease-in-out;
+                            -webkit-transition: all 0.3s ease-in-out;
+                            -moz-transition: all 0.3s ease-in-out;
+                            -ms-transition: all 0.3s ease-in-out;
+
+                            &:hover {
+                                background: #f3f3f3;
+                                color: #000000;
+                            }
+                        }
+
+                        textarea {
+                            width: 280px;
+                            height: 70px;
+                            max-height: 70px;
+                            padding: 15px;
+
+                            background: transparent;
+                            outline: none;
+
+                            color: #202020;
+                            font-family: "Poppins", sans-serif;
+
+
+                            border: solid 1px #000000;
+
+                            transition: all 0.3s ease-in-out;
+                            -webkit-transition: all 0.3s ease-in-out;
+                            -moz-transition: all 0.3s ease-in-out;
+                            -ms-transition: all 0.3s ease-in-out;
+
+                            &:hover {
+                                background: #f3f3f3;
+                                color: #000000;
+                            }
+                        }
+
+                        #submit {
+                            width: 280px;
+                            padding: 0;
+                            margin: -5px 0px 0px 0px;
+
+                            color: #202020;
+                            font-family: "Poppins", sans-serif;
+
+                            outline: none;
+                            cursor: pointer;
+
+                            border: solid 1px #000000;
+                            border-top: none;
+
+                            &:hover {
+                                color: #f3f3f3;
+                                background: #692dff;
+                            }
+                        }
+
+
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 370px) {
+    .divForm_titulo {
+        margin-left: 8%;
+    }
+
+}
+
+@media (min-width: 700px) {
+
+    .divForm_Todo {
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    .divForm_titulo {
+        margin-left: 8%;
+        width: 60%;
+    }
+
+    .divForm_p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .divForm_titulo {
+        margin-left: 6%;
+    }
+}
+
+
+
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: #000000;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: #000000;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:focus::placeholder,
+textarea::focus:placeholder {
+    color: #000000;
+}
+
+input::-ms-placeholder,
+textarea::-ms-placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:focus::-ms-placeholder,
+textarea:focus::-ms-placeholder {
+    color: #000000;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder,
+textarea:hover::-webkit-input-placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:hover:focus::-webkit-input-placeholder,
+textarea:hover:focus::-webkit-input-placeholder {
+    color: #000000;
+}
+
+input:hover::-moz-placeholder,
+textarea:hover::-moz-placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:hover:focus::-moz-placeholder,
+textarea:hover:focus::-moz-placeholder {
+    color: #000000;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:hover:focus::placeholder,
+textarea:hover:focus::placeholder {
+    color: #000000;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+input:hover:focus::-ms-placeholder,
+textarea:hover::focus:-ms-placeholder {
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 372px) {
+    #form {
+        position: relative;
+        width: 325px;
+        font-size: 1.2rem;
+    }
+
+    input {
+        width: 325px;
+        height: 40px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    textarea {
+        width: 325px;
+        height: 80px;
+        max-height: 80px;
+        padding: 15px;
+    }
+
+    #submit {
+        width: 325px;
+    }
+}
+
+
+@media (min-width: 400px) {
+    #form {
+        position: relative;
+        width: 375px;
+        font-size: 1.2rem;
+    }
+
+    input {
+        width: 375px;
+        height: 40px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    textarea {
+        width: 375px;
+        height: 80px;
+        max-height: 80px;
+        padding: 15px;
+    }
+
+    #submit {
+        width: 375px;
+    }
+}
+
+
+@media (min-width: 700px) {
+    #form {
+        position: relative;
+        width: 620px;
+        font-size: 1.2rem;
+    }
+
+    input {
+        width: 620px;
+        height: 40px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    textarea {
+        width: 620px;
+        height: 80px;
+        max-height: 80px;
+        padding: 15px;
+    }
+
+    #submit {
+        width: 620px;
+    }
+}
+
+
+@media (min-width: 900px) {
+    #form {
+        width: 750px;
+        margin: 50px auto 100px auto;
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+    }
+
+    input {
+        font-size: 1.8rem;
+        width: 720px;
+        height: 50px;
+        padding: 0px 15px 0px 15px;
+    }
+
+    textarea {
+        width: 720px;
+        max-width: 720px;
+        height: 110px;
+        max-height: 110px;
+        padding: 15px;
+
+        background: transparent;
+        outline: none;
+
+        color: #202020;
+        font-size: 1.8rem;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #submit {
+        width: 720px;
+
+        padding: 0;
+        margin: -5px 0px 0px 0px;
+
+        font-size: 1.8rem;
+        color: #202020;
+        font-family: "Poppins", sans-serif;
+
+        outline: none;
+        cursor: pointer;
+
+        border: solid 1px #000000;
+        border-top: none;
+    }
+
+    .imagenForm {
+        display: flex;
+        width: 400px;
+        height: auto;
+        margin: 2%;
+        padding-left: 4%;
+        padding-right: 10%;
+    }
+}
+
+
+@media (min-width: 1020px) {
+    .imagenForm {
+        display: flex;
+        width: 340px;
+        height: auto;
+        margin: 2%;
+        padding-right: 9%;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .imagenForm {
+        display: flex;
+        width: 540px;
+        height: auto;
+        margin: 2%;
+        padding-right: 9%;
+        margin-right: 5%;
+    }
+}
+
+@media (min-width: 1820px) {
+    .imagenForm {
+        width: 600px;
+        height: auto;
+        padding-left: 35%;
+    }
+}

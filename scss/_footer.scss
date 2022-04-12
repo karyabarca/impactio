@@ -1,0 +1,33 @@
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4%;
+    padding-top: 2%;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+
+
+        li {
+            display: flex;
+            padding-left: 5%;
+            padding-right: 5%;
+
+            .imgfooter {
+                height: 30px;
+                width: auto;
+            }
+        }
+    }
+
+
+}
+
+
+
+

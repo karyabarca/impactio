@@ -1,0 +1,61 @@
+.sectionNosotros {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    margin: 2px;
+    padding-bottom: 3%;
+    padding-top: 1%;
+
+    div {
+        .titulos {
+            font-size: 4rem;
+            display: flex;
+            justify-content: center;
+            font-weight: 800;
+            margin-bottom: 10%;
+            display: inline-block;
+            margin: 0 0.5rem;
+            animation-duration: 2s;
+            text-align: center;
+        }
+
+    }
+}
+
+
+    
+    
+    
+    .descripcionPadre {
+        margin: 1%;
+        align-items: center;
+
+        div {
+
+            .descripcionUno {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 2.4rem;
+                font-weight: 700;
+                text-align: left;
+                padding: 2%;
+            }
+
+            .descripcionDos {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 1.8rem;
+                color: #313131;
+                padding: 2%;
+                text-align: justify;
+            }
+        }
+
+    }
+
+
+
+
+
+
+
