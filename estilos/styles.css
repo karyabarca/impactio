@@ -25,20 +25,19 @@ html {
 body {
   font-family: "Poppins", sans-serif; }
 
-section {
+.sectionIndex {
   display: flex;
+  align-content: center;
+  text-align: center;
+  margin: 2px;
+  padding-bottom: 3%;
+  padding-top: 1%;
   flex-direction: row; }
-  section .sectionIndex {
-    display: flex;
-    align-content: center;
-    text-align: center;
-    margin: 2px;
-    padding-bottom: 3%;
-    padding-top: 1%; }
-    section .sectionIndex .p {
-      font-size: 1.7rem;
-      margin-top: 2%;
-      text-align: center; }
+  .sectionIndex .p {
+    font-size: 2.7rem;
+    margin-top: 2%;
+    text-align: left;
+    padding-left: 2%; }
 
 ol,
 ul {
@@ -71,9 +70,6 @@ main .imagenesPrincipales {
     main .imagenesPrincipales div .descripcionImagen {
       color: #a3a3a3;
       font-weight: 500; }
-
-p {
-  font-size: 1.3rem; }
 
 section ul {
   list-style: none;
@@ -527,7 +523,7 @@ footer {
     padding-top: 3%;
     display: flex; }
     .sectionIndex .p {
-      font-size: 2.5rem; }
+      font-size: 4rem; }
   .sectionservicios {
     padding-right: 5%;
     padding-bottom: 0%;
@@ -583,7 +579,7 @@ footer {
 /*1024PX*/
 @media (min-width: 1024px) {
   .sectionIndex .p {
-    font-size: 4.5rem;
+    font-size: 5.1rem;
     padding-right: 10%;
     text-align: left;
     padding-left: 5%; }
@@ -625,6 +621,11 @@ footer {
 @media (min-width: 1440px) {
   .sectionIndex {
     padding-bottom: 3%; }
+    .sectionIndex .p {
+      font-size: 5.5rem;
+      padding-right: 10%;
+      text-align: left;
+      padding-left: 5%; }
   .sectionservicios {
     padding-bottom: 0%; }
   .mainServicios .sectionuno-mainServicios .divuno-mainServicios {
@@ -657,10 +658,13 @@ footer {
     font-size: 2.4rem; } }
 
 @media screen and (min-width: 1593px) {
-  .imagenesPrincipales div img {
-    height: 350px;
-    width: auto;
-    display: flex; } }
+  main .imagenesPrincipales div img {
+    height: 350px; } }
+
+/*1819PX*/
+@media screen and (min-width: 1819px) {
+  main .imagenesPrincipales div img {
+    height: 388px; } }
 
 /*2150PX*/
 @media screen and (min-width: 2150px) {
@@ -671,11 +675,9 @@ footer {
 
 /*2400PX*/
 @media screen and (min-width: 2400px) {
-  .imagenesPrincipales div img {
-    height: 550px;
-    width: auto;
-    display: flex; }
-  .imagenesPrincipales p {
+  main .imagenesPrincipales div img {
+    height: 550px; }
+  main p {
     font-size: 4.3rem; } }
 
 @media screen and (min-width: 2500px) {
