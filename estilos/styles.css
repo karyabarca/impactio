@@ -1,3 +1,39 @@
+div .titulos {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 800; }
+
+.mainServicios .sectionuno-mainServicios .img-mainServicios img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  padding: 2px; }
+
+.mainServicios .sectiondos-mainServicios .img-mainServicios img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  padding: 2px; }
+
+.sectionNosotros, .sectionservicios, .sectionIndex {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  margin: 2px;
+  padding-bottom: 3%;
+  padding-top: 1%; }
+
+.sectionIndex {
+  flex-direction: row; }
+
+.sectionNosotros div .titulos, .sectionservicios div .titulos, .sectionIndex div .titulos {
+  display: flex;
+  justify-content: center;
+  margin: 0 0.5rem;
+  animation-duration: 2s; }
+
 nav .navPropio {
   font-size: 2.2rem; }
 
@@ -25,19 +61,11 @@ html {
 body {
   font-family: "Poppins", sans-serif; }
 
-.sectionIndex {
-  display: flex;
-  align-content: center;
-  text-align: center;
-  margin: 2px;
-  padding-bottom: 3%;
-  padding-top: 1%;
-  flex-direction: row; }
-  .sectionIndex .p {
-    font-size: 2.7rem;
-    margin-top: 2%;
-    text-align: left;
-    padding-left: 2%; }
+.sectionIndex .p {
+  font-size: 2.7rem;
+  margin-top: 2%;
+  text-align: left;
+  padding-left: 2%; }
 
 ol,
 ul {
@@ -47,7 +75,6 @@ mark {
   background-color: #692dff;
   color: white;
   font-weight: 600;
-  /*border: 1px solid #692dff;*/
   border-radius: 10px; }
 
 main .imagenesPrincipales {
@@ -67,6 +94,8 @@ main .imagenesPrincipales {
       main .imagenesPrincipales div img:hover {
         transform: scale(1.05);
         padding-bottom: 2%; }
+    main .imagenesPrincipales div p {
+      font-size: 1.5rem; }
     main .imagenesPrincipales div .descripcionImagen {
       color: #a3a3a3;
       font-weight: 500; }
@@ -369,26 +398,20 @@ textarea:hover::focus:-ms-placeholder {
     height: auto;
     padding-left: 35%; } }
 
-.sectionservicios {
+.sectionservicios div .subtitulos {
+  margin-left: 6%;
+  justify-self: right;
   display: flex;
-  align-content: center;
-  text-align: center;
-  margin: 2px;
-  padding-bottom: 3%;
-  padding-top: 1%; }
-  .sectionservicios div .subtitulos {
-    margin-left: 6%;
-    justify-self: right;
-    display: flex;
-    color: #692dff;
-    font-weight: 700;
-    margin-top: 5%;
-    font-size: 1.2rem;
-    padding-bottom: 0.5%; }
-  .sectionservicios div .p {
-    font-size: 3rem;
-    margin-top: 2%;
-    text-align: left; }
+  color: #692dff;
+  font-weight: 700;
+  margin-top: 5%;
+  font-size: 1.2rem;
+  padding-bottom: 0.5%; }
+
+.sectionservicios div .p {
+  font-size: 3rem;
+  margin-top: 2%;
+  text-align: left; }
 
 .mainServicios {
   margin: 3%; }
@@ -406,12 +429,6 @@ textarea:hover::focus:-ms-placeholder {
     .mainServicios .sectionuno-mainServicios .img-mainServicios {
       display: flex;
       justify-content: center; }
-      .mainServicios .sectionuno-mainServicios .img-mainServicios img {
-        width: 250px;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        padding: 2px; }
   .mainServicios .sectiondos-mainServicios {
     display: flex;
     flex-direction: row-reverse;
@@ -427,30 +444,6 @@ textarea:hover::focus:-ms-placeholder {
     .mainServicios .sectiondos-mainServicios .img-mainServicios {
       display: flex;
       justify-content: center; }
-      .mainServicios .sectiondos-mainServicios .img-mainServicios img {
-        width: 250px;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        padding: 2px; }
-
-.sectionNosotros {
-  display: flex;
-  align-content: center;
-  text-align: center;
-  margin: 2px;
-  padding-bottom: 3%;
-  padding-top: 1%; }
-  .sectionNosotros div .titulos {
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-    font-weight: 800;
-    margin-bottom: 10%;
-    display: inline-block;
-    margin: 0 0.5rem;
-    animation-duration: 2s;
-    text-align: center; }
 
 .descripcionPadre {
   margin: 1%;
@@ -545,7 +538,7 @@ footer {
     font-size: 3.6rem; }
   .descripcionPadre div .descripcionDos {
     font-size: 2rem; }
-  .sectionNosotros div .titulos {
+  .sectionNosotros div .titulos, .sectionservicios div .titulos, .sectionIndex div .titulos {
     font-size: 6rem;
     width: 100%;
     display: flex;
@@ -686,7 +679,7 @@ footer {
   .parrafos-mainServicios {
     font-size: 4rem; }
   /*nosotros*/
-  .sectionNosotros div .titulos {
+  .sectionNosotros div .titulos, .sectionservicios div .titulos, .sectionIndex div .titulos {
     font-size: 10rem; }
   .descripcionPadre div .descripcionUno {
     font-size: 6.5rem; }
