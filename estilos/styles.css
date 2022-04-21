@@ -1,7 +1,9 @@
 div .titulos {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
-  font-weight: 800; }
+  font-weight: 800;
+  margin-bottom: 50px;
+  margin-top: 20px; }
 
 .mainServicios .sectionuno-mainServicios .img-mainServicios img {
   width: 250px;
@@ -447,14 +449,15 @@ textarea:hover::focus:-ms-placeholder {
 
 .descripcionPadre {
   margin: 1%;
-  align-items: center; }
+  align-items: center;
+  padding: 2%; }
   .descripcionPadre div .descripcionUno {
     display: flex;
     flex-wrap: wrap;
     font-size: 2.4rem;
     font-weight: 700;
     text-align: left;
-    padding: 2%; }
+    padding: 7%; }
   .descripcionPadre div .descripcionDos {
     display: flex;
     flex-wrap: wrap;
@@ -462,6 +465,85 @@ textarea:hover::focus:-ms-placeholder {
     color: #313131;
     padding: 2%;
     text-align: justify; }
+
+.nosotros-portada {
+  display: flex;
+  justify-content: center; }
+
+.nosotros-portada-img {
+  width: 266px;
+  height: 130px; }
+
+.sectionBlog {
+  display: flex;
+  padding-right: 5px;
+  padding-left: 5px;
+  justify-content: center;
+  align-items: center; }
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center; }
+
+.fecha {
+  margin-top: 24px;
+  margin-bottom: 8px; }
+
+.fecha-texto {
+  text-align: left;
+  font-size: 1.5rem; }
+
+.articulo-link {
+  text-decoration: none; }
+
+.texto-blog {
+  margin-top: 10px;
+  margin-bottom: 24px; }
+
+.texto-blog-parrafo {
+  margin-bottom: 0px;
+  text-align: left;
+  color: #000;
+  font-size: 18px;
+  line-height: 32px; }
+
+.articulo-titulo {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #000;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: left; }
+
+.leermas {
+  display: flex;
+  margin-bottom: 80px; }
+
+.leermas-link {
+  text-decoration: none; }
+
+.leermas-texto {
+  color: #486cff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  display: inline-block; }
+
+.leermas-img {
+  max-width: 100%;
+  vertical-align: middle;
+  margin-left: 8px; }
+
+.blog-portada-img {
+  width: 270px;
+  height: 170px; }
 
 footer {
   display: flex;
@@ -486,7 +568,13 @@ footer {
 @media screen and (min-width: 375px) {
   .sectionservicios div .p {
     font-size: 3.2rem;
-    text-align: left; } }
+    text-align: left; }
+  .nosotros-portada-img {
+    width: 320px;
+    height: 156px; }
+  .blog-portada-img {
+    width: 315px;
+    height: 190px; } }
 
 /* 400px */
 @media screen and (min-width: 400px) {
@@ -506,7 +594,13 @@ footer {
     font-size: 2.4rem; }
   .sectionservicios div .p {
     font-size: 3.4rem;
-    text-align: left; } }
+    text-align: left; }
+  .nosotros-portada-img {
+    width: 400px;
+    height: 195px; }
+  .blog-portada-img {
+    width: 375px;
+    height: 240px; } }
 
 /* 756px */
 @media screen and (min-width: 756px) {
@@ -529,7 +623,26 @@ footer {
       font-weight: 700;
       padding-bottom: 0.5%; }
     .sectionservicios div .p {
-      font-size: 4rem; } }
+      font-size: 4rem; }
+  .nosotros-portada-img {
+    width: 727px;
+    height: 354px; }
+  .grid-container {
+    display: grid;
+    margin-left: 0px;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    -ms-grid-columns: minmax(auto, 1fr) 1fr;
+    grid-template-columns: minmax(auto, 1fr) 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto; }
+  .sectionBlog {
+    padding-right: 10px;
+    padding-left: 10px; }
+  .blog-portada-img {
+    width: 330px;
+    height: 210px; } }
 
 /*900PX*/
 @media (min-width: 900px) {
@@ -602,7 +715,15 @@ footer {
     font-size: 2rem; }
   .mainServicios .sectiondos-mainServicios .img-mainServicios img {
     width: 350px;
-    height: 350px; } }
+    height: 350px; }
+  .nosotros-portada-img {
+    width: 941px;
+    height: 458px; }
+  .grid-container {
+    grid-column-gap: 25px; }
+  .blog-portada-img {
+    width: 410px;
+    height: 260px; } }
 
 @media screen and (min-width: 1050px) {
   .imagenesPrincipales div img {
@@ -648,7 +769,18 @@ footer {
   .descripcionPadre div .descripcionUno {
     font-size: 4rem; }
   .descripcionPadre div .descripcionDos {
-    font-size: 2.4rem; } }
+    font-size: 2.4rem; }
+  .nosotros-portada-img {
+    width: 1333px;
+    height: 650px; }
+  .sectionBlog {
+    padding-right: 80px;
+    padding-left: 80px; }
+  .grid-container {
+    grid-column-gap: 35px; }
+  .blog-portada-img {
+    width: 600px;
+    height: 380px; } }
 
 @media screen and (min-width: 1593px) {
   main .imagenesPrincipales div img {
@@ -657,14 +789,20 @@ footer {
 /*1819PX*/
 @media screen and (min-width: 1819px) {
   main .imagenesPrincipales div img {
-    height: 388px; } }
+    height: 388px; }
+  .blog-portada-img {
+    width: 685px;
+    height: 400px; } }
 
 /*2150PX*/
 @media screen and (min-width: 2150px) {
   .sectionIndex .p {
     font-size: 9rem; }
   .sectionservicios .p {
-    font-size: 9rem; } }
+    font-size: 9rem; }
+  .blog-portada-img {
+    width: 750px;
+    height: 530px; } }
 
 /*2400PX*/
 @media screen and (min-width: 2400px) {

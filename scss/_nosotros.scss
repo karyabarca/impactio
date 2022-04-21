@@ -1,12 +1,8 @@
 
-
-
-    
-    
-    
     .descripcionPadre {
         margin: 1%;
         align-items: center;
+        padding: 2%;
 
         div {
 
@@ -16,7 +12,7 @@
                 font-size: 2.4rem;
                 font-weight: 700;
                 text-align: left;
-                padding: 2%;
+                padding: 7%;
             }
 
             .descripcionDos {
@@ -33,7 +29,13 @@
 
 
 
-
-
+.nosotros-portada {
+    display: flex;
+    justify-content: center;
+}
+.nosotros-portada-img {
+    width: 266px;
+    height: 130px;
+}
 
 

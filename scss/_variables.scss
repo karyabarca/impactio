@@ -1,8 +1,10 @@
 $colorPrincipal: #692dff;
 
-$estilosTitulos: (tFuente: 4rem,
+$estilosTitulos: (tFuente: 5rem,
     tGrosor: 800,
-    centro: center);
+    centro: center,
+    margenAbajo: 50px,
+    margenArriba: 20px);
 
 
 div {
@@ -10,6 +12,8 @@ div {
         font-size: map-get($estilosTitulos, tFuente);
         text-align: map-get($estilosTitulos, centro);
         font-weight: map-get($estilosTitulos, tGrosor);
+        margin-bottom: map-get($estilosTitulos, margenAbajo);
+        margin-top: map-get($estilosTitulos, margenArriba);
     }
 }
 
