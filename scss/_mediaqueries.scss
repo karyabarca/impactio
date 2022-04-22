@@ -17,7 +17,7 @@
         width: 320px;
         height: 156px;
     }
-    
+
 
     .blog-portada-img {
         width: 315px;
@@ -81,7 +81,7 @@
         width: 400px;
         height: 195px;
     }
-    
+
 
 
     .blog-portada-img {
@@ -131,13 +131,17 @@
         }
     }
 
-
+    .sectionContacto {
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: center;
+    }
 
     .nosotros-portada-img {
         width: 727px;
         height: 354px;
     }
-    
+
 
     .grid-container {
         display: grid;
@@ -317,14 +321,14 @@
             }
         }
     }
-    
+
 
     .nosotros-portada-img {
         width: 941px;
         height: 458px;
     }
 
-    
+
     .grid-container {
         grid-column-gap: 25px;
     }
@@ -527,21 +531,21 @@
 @media screen and (min-width: 2400px) {
 
 
-        main {
-            .imagenesPrincipales {
-    
-                div {
-                    img {
-                        height: 550px;
-                    }
+    main {
+        .imagenesPrincipales {
+
+            div {
+                img {
+                    height: 550px;
                 }
             }
+        }
 
-            p {
-                font-size: 4.3rem;
-            }
+        p {
+            font-size: 4.3rem;
         }
     }
+}
 
 
 @media screen and (min-width: 2500px) {
