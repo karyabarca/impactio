@@ -171,6 +171,11 @@ em {
   text-decoration: none;
   cursor: pointer; }
 
+.formulario-boton {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20%; }
+
 .sectionservicios div .subtitulos {
   margin-left: 6%;
   justify-self: right;
