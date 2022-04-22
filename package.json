@@ -1,7 +1,7 @@
 {
   "name": "hipnosia",
   "version": "1.0.0",
-  "description": "",
+  "description": "Agencia digital enfocada al branding, social media, ilustración y fotografía. Situada en México.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
