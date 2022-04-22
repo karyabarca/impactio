@@ -126,7 +126,7 @@ em {
   border-style: none none solid;
   border-width: 1px;
   border-color: #000 #000 rgba(199, 200, 201, 0.3);
-  color: #222;
+  color: #000;
   font-size: 20px;
   font-weight: 400; }
 
@@ -145,7 +145,7 @@ em {
   padding: 0px;
   justify-content: flex-end;
   align-items: flex-end;
-  color: #fff;
+  color: #000;
   font-size: 20px;
   border-style: none none solid;
   border-width: 1px;
