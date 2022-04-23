@@ -119,6 +119,10 @@ em {
 .contacto-formulario {
   width: 100%; }
 
+a {
+  color: #692dff;
+  text-decoration: underline; }
+
 .text-field-1 {
   height: 88px;
   max-width: none;
@@ -170,6 +174,10 @@ em {
   line-height: inherit;
   text-decoration: none;
   cursor: pointer; }
+  .w-button:hover {
+    transform: scale(1.15);
+    background-color: #692dff;
+    color: white; }
 
 .formulario-boton {
   display: flex;
@@ -470,7 +478,7 @@ footer {
     text-align: left;
     padding-left: 5%; }
   main .imagenesPrincipales div img {
-    height: 320px; }
+    height: 313px; }
   .sectionservicios div .subtitulos {
     font-size: 1.8rem;
     justify-self: right;
@@ -516,7 +524,7 @@ footer {
   .sectionIndex {
     padding-bottom: 3%; }
     .sectionIndex .p {
-      font-size: 5.5rem;
+      font-size: 5.2rem;
       padding-right: 10%;
       text-align: left;
       padding-left: 5%; }
@@ -563,11 +571,15 @@ footer {
     height: 380px; } }
 
 @media screen and (min-width: 1593px) {
+  .sectionIndex .p {
+    font-size: 5.8rem; }
   main .imagenesPrincipales div img {
     height: 350px; } }
 
 /*1819PX*/
 @media screen and (min-width: 1819px) {
+  .sectionIndex .p {
+    font-size: 6.5rem; }
   main .imagenesPrincipales div img {
     height: 388px; }
   .blog-portada-img {
@@ -577,7 +589,7 @@ footer {
 /*2150PX*/
 @media screen and (min-width: 2150px) {
   .sectionIndex .p {
-    font-size: 9rem; }
+    font-size: 7.7rem; }
   .sectionservicios .p {
     font-size: 9rem; }
   .blog-portada-img {
@@ -592,6 +604,8 @@ footer {
     font-size: 4.3rem; } }
 
 @media screen and (min-width: 2500px) {
+  .sectionIndex .p {
+    font-size: 9.2rem; }
   .titulos-mainServicios {
     font-size: 6rem; }
   .parrafos-mainServicios {

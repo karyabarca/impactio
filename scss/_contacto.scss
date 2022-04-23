@@ -10,7 +10,10 @@
     width: 100%;
 }
 
-
+a {
+    color: $colorPrincipal;
+    text-decoration: underline;
+}
 
 .text-field-1 {
     height: 88px;
@@ -68,6 +71,12 @@
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
+
+    &:hover {
+        transform: scale(1.15);
+        background-color: $colorPrincipal;
+        color: white;
+    }
 
 }
 

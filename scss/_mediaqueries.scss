@@ -251,7 +251,7 @@
 
             div {
                 img {
-                    height: 320px;
+                    height: 313px;
                 }
             }
         }
@@ -364,7 +364,7 @@
         padding-bottom: 3%;
 
         .p {
-            font-size: 5.5rem;
+            font-size: 5.2rem;
             padding-right: 10%;
             text-align: left;
             padding-left: 5%;
@@ -470,6 +470,15 @@
 
 
 @media screen and (min-width: 1593px) {
+    .sectionIndex {
+
+        .p {
+            font-size: 5.8rem;
+        }
+    }
+
+
+
 
     main {
         .imagenesPrincipales {
@@ -486,6 +495,14 @@
 
 /*1819PX*/
 @media screen and (min-width: 1819px) {
+    .sectionIndex {
+
+        .p {
+            font-size: 6.5rem;
+        }
+    }
+
+
 
     main {
         .imagenesPrincipales {
@@ -509,7 +526,7 @@
 
     .sectionIndex {
         .p {
-            font-size: 9rem;
+            font-size: 7.7rem;
         }
     }
 
@@ -549,6 +566,13 @@
 
 
 @media screen and (min-width: 2500px) {
+    .sectionIndex {
+
+        .p {
+            font-size: 9.2rem;
+        }
+    }
+    
     .titulos-mainServicios {
         font-size: 6rem;
     }
