@@ -98,10 +98,11 @@ main .imagenesPrincipales {
         transform: scale(1.05);
         padding-bottom: 2%; }
     main .imagenesPrincipales div p {
-      font-size: 1.5rem; }
+      font-size: 1.8rem; }
     main .imagenesPrincipales div .descripcionImagen {
       color: #a3a3a3;
-      font-weight: 500; }
+      font-weight: 500;
+      font-size: 1.5rem; }
 
 section ul {
   list-style: none;
@@ -110,11 +111,21 @@ section ul {
 em {
   font-style: italic; }
 
+.sectionContacto {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center; }
+
 .contacto-titulo {
-  font-size: 40px;
-  line-height: 48px;
-  font-weight: 600;
-  letter-spacing: 0px; }
+  font-size: 4rem;
+  font-weight: 600; }
+
+.divForm_p {
+  font-size: 1.8rem; }
+
+.contacto-div {
+  padding-bottom: 10%;
+  text-align: center; }
 
 .contacto-formulario {
   width: 100%; }
@@ -349,6 +360,11 @@ footer {
         width: auto; }
 
 /* 375px */
+@media screen and (max-width: 376px) {
+  mark {
+    background-color: white;
+    color: #692dff; } }
+
 @media screen and (min-width: 375px) {
   .sectionservicios div .p {
     font-size: 3.2rem;
@@ -379,6 +395,9 @@ footer {
   .sectionservicios div .p {
     font-size: 3.4rem;
     text-align: left; }
+  .sectionContacto {
+    padding-left: 10%;
+    padding-right: 10%; }
   .nosotros-portada-img {
     width: 400px;
     height: 195px; }
@@ -410,8 +429,7 @@ footer {
       font-size: 4rem; }
   .sectionContacto {
     padding-left: 20%;
-    padding-right: 20%;
-    text-align: center; }
+    padding-right: 20%; }
   .nosotros-portada-img {
     width: 727px;
     height: 354px; }
@@ -479,6 +497,10 @@ footer {
     padding-left: 5%; }
   main .imagenesPrincipales div img {
     height: 313px; }
+  main .imagenesPrincipales div p {
+    font-size: 2.2rem; }
+  main .imagenesPrincipales div .descripcionImagen {
+    font-size: 1.9rem; }
   .sectionservicios div .subtitulos {
     font-size: 1.8rem;
     justify-self: right;
