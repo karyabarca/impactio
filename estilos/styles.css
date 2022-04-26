@@ -556,6 +556,8 @@ footer {
       padding-right: 10%;
       text-align: left;
       padding-left: 5%; }
+  nav .navPropio {
+    font-size: 2.9rem; }
   .sectionservicios {
     padding-bottom: 0%; }
   .mainServicios .sectionuno-mainServicios .divuno-mainServicios {
@@ -629,9 +631,7 @@ footer {
   main .imagenesPrincipales div img {
     height: 550px; }
   main p {
-    font-size: 4.3rem; }
-  nav .navPropio {
-    font-size: 2.9rem; } }
+    font-size: 4.3rem; } }
 
 @media screen and (min-width: 2500px) {
   .sectionIndex .p {
