@@ -414,6 +414,10 @@ footer {
     display: flex; }
     .sectionIndex .p {
       font-size: 4rem; }
+  .mainServicios {
+    margin: 3%;
+    padding-left: 1%;
+    padding-right: 1%; }
   .sectionservicios {
     padding-right: 5%;
     padding-bottom: 0%;
