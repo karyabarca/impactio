@@ -629,7 +629,9 @@ footer {
   main .imagenesPrincipales div img {
     height: 550px; }
   main p {
-    font-size: 4.3rem; } }
+    font-size: 4.3rem; }
+  nav .navPropio {
+    font-size: 2.9rem; } }
 
 @media screen and (min-width: 2500px) {
   .sectionIndex .p {
