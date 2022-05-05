@@ -1,21 +1,29 @@
 $colorPrincipal: #692dff;
 
-$estilosTitulos: (tFuente: 5rem,
-    tGrosor: 800,
-    centro: center,
-    margenAbajo: 50px,
-    margenArriba: 20px);
+$estilosTitulos: (tFuente: 3rem,
+    tGrosor: 400,
+    alineacion: left,
+    abajo: 10%,
+    arriba: 10%,
+    izquierda: 7%,
+    derecha: 7%,
+    interlineado: 120%);
 
 
 div {
     .titulos {
         font-size: map-get($estilosTitulos, tFuente);
-        text-align: map-get($estilosTitulos, centro);
+        text-align: map-get($estilosTitulos, alineacion);
         font-weight: map-get($estilosTitulos, tGrosor);
-        margin-bottom: map-get($estilosTitulos, margenAbajo);
-        margin-top: map-get($estilosTitulos, margenArriba);
+        margin-bottom: map-get($estilosTitulos, abajo);
+        margin-top: map-get($estilosTitulos, arriba);
+        padding-left: map-get($estilosTitulos, izquierda);
+        padding-right: map-get($estilosTitulos, derecha);
+        line-height: map-get($estilosTitulos, interlineado);
     }
 }
+
+
 
 $imgServicios: (ancho: 250px,
     alto: 250px,
@@ -66,18 +74,23 @@ $imgServicios: (ancho: 250px,
     @extend .sectionNosotros;
 }
 
-.sectionIndex {
+.sectionGeneral {
     @extend .sectionNosotros;
     flex-direction: row;
 }
 
+.p_nosotros {
+    @extend .p_general;
+    font-weight: 600;
+}
 
-        @mixin titulos {
-            display: flex;
-            justify-content: center;
-            margin: 0 0.5rem;
-            animation-duration: 2s;
-        }
+
+@mixin titulos {
+    display: flex;
+    justify-content: center;
+    margin: 0 0.5rem;
+    animation-duration: 2s;
+}
 
 
 

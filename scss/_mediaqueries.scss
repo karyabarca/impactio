@@ -16,16 +16,11 @@
         div {
             .p {
                 font-size: 3.2rem;
-                text-align: left;
+                text-align: center;
             }
         }
     }
 
-
-    .nosotros-portada-img {
-        width: 320px;
-        height: 156px;
-    }
 
 
     .blog-portada-img {
@@ -69,18 +64,27 @@
 
 @media screen and (min-width: 425px) {
 
-    .sectionIndex {
+    .sectionGeneral {
 
-        .p {
-            font-size: 2.4rem;
+        .p_general {
+            font-size: 3rem;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        .p_nosotros {
+            font-size: 5rem;
+            padding-left: 5%;
+            padding-right: 5%;
         }
     }
+
+
 
     .sectionservicios {
         div {
             .p {
                 font-size: 3.4rem;
-                text-align: left;
             }
         }
 
@@ -90,11 +94,6 @@
     .sectionContacto {
         padding-left: 10%;
         padding-right: 10%;
-    }
-
-    .nosotros-portada-img {
-        width: 400px;
-        height: 195px;
     }
 
 
@@ -114,15 +113,20 @@
 
 
 @media screen and (min-width: 756px) {
-    .sectionIndex {
-        padding-right: 5%;
-        padding-bottom: 5%;
-        padding-top: 3%;
+    .sectionGeneral {
         display: flex;
 
-        .p {
+        .p_general {
             font-size: 4rem;
+            padding-left: 14%;
+            padding-right: 14%;
+            margin-top: 6%;
         }
+
+        .p_nosotros {
+            font-size: 5rem;
+        }
+
     }
 
     .mainServicios {
@@ -157,10 +161,6 @@
         padding-right: 20%;
     }
 
-    .nosotros-portada-img {
-        width: 727px;
-        height: 354px;
-    }
 
 
     .grid-container {
@@ -184,6 +184,12 @@
     .blog-portada-img {
         width: 330px;
         height: 210px;
+    }
+
+    div {
+        .titulos {
+            font-size: 4rem;
+        }
     }
 }
 
@@ -257,12 +263,17 @@
 
 @media (min-width: 1024px) {
 
-    .sectionIndex {
-        .p {
-            font-size: 5.1rem;
+    .sectionGeneral {
+        .p_general {
+            font-size: 6rem;
             padding-right: 10%;
-            text-align: left;
-            padding-left: 5%;
+            padding-left: 10%;
+            margin-bottom: 10%;
+
+        }
+
+        .p_nosotros {
+            font-size: 5.3rem;
         }
     }
 
@@ -351,11 +362,6 @@
     }
 
 
-    .nosotros-portada-img {
-        width: 941px;
-        height: 458px;
-    }
-
 
     .grid-container {
         grid-column-gap: 25px;
@@ -365,6 +371,12 @@
     .blog-portada-img {
         width: 410px;
         height: 260px;
+    }
+
+    div {
+        .titulos {
+            font-size: 5.5rem;
+        }
     }
 }
 
@@ -385,8 +397,8 @@
 
 
 @media (min-width: 1339px) {
-    .sectionIndex {
-        .p {
+    .sectionGeneral {
+        .p_general {
             font-size: 4.8rem;
         }
     }
@@ -400,26 +412,33 @@
             }
         }
     }
+
+    .contacto-titulo {
+        font-size: 5rem;
+    }
+
+    .divForm_p {
+        font-size: 2.2rem;
+    }
 }
 
 /*1440PX*/
 
 
 @media (min-width: 1440px) {
-    .sectionIndex {
-        padding-bottom: 3%;
+    .sectionGeneral {
+        .p_general {
+            font-size: 8.6rem;
+        }
 
-        .p {
-            font-size: 5.2rem;
-            padding-right: 10%;
-            text-align: left;
-            padding-left: 5%;
+        .p_nosotros {
+            font-size: 7.5rem;
         }
     }
 
     nav {
         .navPropio {
-            font-size: 2.9rem;
+            font-size: 2.6rem;
         }
     }
 
@@ -433,8 +452,7 @@
         .sectionuno-mainServicios {
 
             .divuno-mainServicios {
-                padding: 2%;
-                padding-left: 10%;
+                padding-left: 5%;
 
 
                 .titulos-mainServicios {
@@ -460,8 +478,7 @@
         .sectiondos-mainServicios {
 
             .divdos-mainServicios {
-                padding: 2%;
-                padding-right: 10%;
+                padding-right: 5%;
 
                 .titulos-mainServicios {
                     font-size: 4rem;
@@ -496,11 +513,6 @@
     }
 
 
-    .nosotros-portada-img {
-        width: 1333px;
-        height: 650px;
-    }
-
     .sectionBlog {
         padding-right: 80px;
         padding-left: 80px;
@@ -515,15 +527,59 @@
         width: 600px;
         height: 380px;
     }
+
+    div {
+        .titulos {
+            font-size: 7.4rem;
+        }
+    }
+
+    .contacto-titulo {
+        font-size: 7rem;
+    }
+
+    .divForm_p {
+        font-size: 3rem;
+    }
 }
 
+@media screen and (min-width: 1459px) {
+    .sectionGeneral {
 
+        .p_general {
+            padding-right: 10.7%;
+            padding-left: 10.7%;
+        }
+    }
 
+}
+
+@media screen and (min-width: 1484px) {
+    .sectionGeneral {
+
+        .p_general {
+            padding-right: 11.3%;
+            padding-left: 11.3%;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1506px) {
+    .sectionGeneral {
+
+        .p_general {
+            padding-right: 12%;
+            padding-left: 12%;
+        }
+    }
+
+}
 
 @media screen and (min-width: 1593px) {
-    .sectionIndex {
+    .sectionGeneral {
 
-        .p {
+        .p_general {
             font-size: 5.8rem;
         }
     }
@@ -546,10 +602,11 @@
 
 /*1819PX*/
 @media screen and (min-width: 1819px) {
-    .sectionIndex {
+    .sectionGeneral {
 
-        .p {
+        .p_general {
             font-size: 6.5rem;
+
         }
     }
 
@@ -575,8 +632,8 @@
 /*2150PX*/
 @media screen and (min-width: 2150px) {
 
-    .sectionIndex {
-        .p {
+    .sectionGeneral {
+        .p_general {
             font-size: 7.7rem;
         }
     }
@@ -618,10 +675,10 @@
 
 
 @media screen and (min-width: 2500px) {
-    .sectionIndex {
+    .sectionGeneral {
 
-        .p {
-            font-size: 9.2rem;
+        .p_general {
+            font-size: 13.7rem;
         }
     }
 
