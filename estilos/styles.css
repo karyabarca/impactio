@@ -8,6 +8,13 @@ div .titulos {
   padding-right: 7%;
   line-height: 120%; }
 
+.titulosdos {
+  font-size: 4.2rem;
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 3%;
+  margin-top: 3%; }
+
 .mainServicios .sectionuno-mainServicios .img-mainServicios img {
   width: 250px;
   height: 250px;
@@ -33,6 +40,12 @@ div .titulos {
 .sectionGeneral {
   flex-direction: row; }
 
+.sectionGeneral .p_general, .sectionGeneral .p_nosotros {
+  font-size: 4rem;
+  margin-top: 20%;
+  text-align: center;
+  animation-duration: 2s; }
+
 .p_nosotros {
   font-weight: 600; }
 
@@ -54,7 +67,8 @@ nav .navBarPropio {
 
 .navbar-light .navbar-nav .nav-link {
   color: #000000;
-  padding: 10px 10px; }
+  padding: 10px 10px;
+  font-weight: 600; }
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
@@ -70,15 +84,12 @@ html {
 body {
   font-family: "Poppins", sans-serif; }
 
-.sectionGeneral .p_general, .sectionGeneral .p_nosotros {
-  font-size: 2.7rem;
-  margin-top: 20%;
-  text-align: center;
-  margin-bottom: 20%; }
-
 ol,
 ul {
   padding-left: 0rem; }
+
+.margen_general {
+  margin-bottom: 20%; }
 
 main .imagenesPrincipales {
   display: flex;
@@ -111,6 +122,32 @@ section ul {
 em {
   font-style: italic; }
 
+.p_index {
+  margin-bottom: 0%;
+  font-size: 4rem;
+  margin-top: 20%;
+  text-align: center;
+  font-weight: 500; }
+
+.boton_index {
+  display: inline-block;
+  padding: 9px 15px;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer; }
+  .boton_index:hover {
+    transform: scale(1.15);
+    background-color: black;
+    color: white; }
+
+.formulario-boton-index {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20%; }
+
+.img_logohipnosia {
+  padding-left: 10%; }
+
 .sectionContacto {
   padding-left: 5%;
   padding-right: 5%;
@@ -118,7 +155,8 @@ em {
 
 .contacto-titulo {
   font-size: 4rem;
-  font-weight: 600; }
+  font-weight: 600;
+  padding-bottom: 2%; }
 
 .divForm_p {
   font-size: 1.8rem; }
@@ -170,10 +208,10 @@ a {
 
 .button-submit {
   border-radius: 88px;
-  background-color: #2332;
-  color: #000;
+  color: #fff;
+  background-color: #692dff;
   line-height: 40px;
-  font-weight: 800;
+  font-weight: 600;
   width: 211px;
   height: 60px;
   margin-top: 32px;
@@ -188,7 +226,7 @@ a {
   cursor: pointer; }
   .w-button:hover {
     transform: scale(1.15);
-    background-color: #692dff;
+    background-color: black;
     color: white; }
 
 .formulario-boton {
@@ -211,56 +249,123 @@ a {
   margin-top: 2%;
   text-align: left; }
 
-.mainServicios {
-  margin: 3%; }
-  .mainServicios .sectionuno-mainServicios {
+.mainServicios .sectionuno-mainServicios {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2%;
+  padding-top: 2%; }
+  .mainServicios .sectionuno-mainServicios .divuno-mainServicios {
+    padding: 4%;
+    padding-right: 10%;
+    padding-left: 10%; }
+    .mainServicios .sectionuno-mainServicios .divuno-mainServicios .titulos-mainServicios {
+      font-size: 3rem;
+      padding-bottom: 5%;
+      font-weight: 600; }
+    .mainServicios .sectionuno-mainServicios .divuno-mainServicios .parrafos-mainServicios {
+      font-size: 1.7rem;
+      text-align: justify;
+      line-height: 200%; }
+    .mainServicios .sectionuno-mainServicios .divuno-mainServicios .padding-mainServicios {
+      padding-bottom: 1%; }
+  .mainServicios .sectionuno-mainServicios .img-mainServicios {
     display: flex;
-    align-items: center;
-    padding-bottom: 2%; }
-    .mainServicios .sectionuno-mainServicios .divuno-mainServicios {
-      padding: 2%; }
-      .mainServicios .sectionuno-mainServicios .divuno-mainServicios .titulos-mainServicios {
-        font-size: 3rem; }
-      .mainServicios .sectionuno-mainServicios .divuno-mainServicios .parrafos-mainServicios {
-        font-size: 1.2rem;
-        text-align: justify; }
-    .mainServicios .sectionuno-mainServicios .img-mainServicios {
-      display: flex;
-      justify-content: center; }
-  .mainServicios .sectiondos-mainServicios {
+    justify-content: center; }
+
+.mainServicios .sectiondos-mainServicios {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-bottom: 2%;
+  padding-top: 2%; }
+  .mainServicios .sectiondos-mainServicios .divdos-mainServicios {
+    padding: 4%;
+    padding-right: 10%;
+    padding-left: 10%; }
+    .mainServicios .sectiondos-mainServicios .divdos-mainServicios .titulos-mainServicios {
+      font-size: 3rem;
+      padding-bottom: 5%;
+      font-weight: 600;
+      text-align: right; }
+    .mainServicios .sectiondos-mainServicios .divdos-mainServicios .parrafos-mainServicios {
+      font-size: 1.7rem;
+      text-align: justify;
+      line-height: 200%;
+      text-align: right; }
+  .mainServicios .sectiondos-mainServicios .img-mainServicios {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding-bottom: 2%; }
-    .mainServicios .sectiondos-mainServicios .divdos-mainServicios {
-      padding: 2%; }
-      .mainServicios .sectiondos-mainServicios .divdos-mainServicios .titulos-mainServicios {
-        font-size: 3rem; }
-      .mainServicios .sectiondos-mainServicios .divdos-mainServicios .parrafos-mainServicios {
-        font-size: 1.2rem;
-        text-align: justify; }
-    .mainServicios .sectiondos-mainServicios .img-mainServicios {
-      display: flex;
-      justify-content: center; }
+    justify-content: center; }
+
+.sectiondos-color {
+  background-color: black;
+  color: white; }
+
+.titulos-padding-extra {
+  padding-bottom: 5%;
+  padding-top: 3%; }
 
 .descripcionPadre {
-  margin: 1%;
   align-items: center;
-  padding: 2%; }
-  .descripcionPadre div .descripcionUno {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 2.4rem;
-    font-weight: 700;
-    text-align: left;
-    padding: 7%; }
-  .descripcionPadre div .descripcionDos {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.8rem;
-    color: #313131;
-    padding: 2%;
-    text-align: justify; }
+  display: flex;
+  flex-wrap: wrap; }
+  .descripcionPadre .bloque-nosotros-uno {
+    margin: 3%; }
+    .descripcionPadre .bloque-nosotros-uno .descripcionDos {
+      font-size: 1.8rem;
+      color: #313131;
+      text-align: justify;
+      line-height: 160%; }
+  .descripcionPadre .bloque-nosotros-dos {
+    margin: 3%; }
+    .descripcionPadre .bloque-nosotros-dos .descripcionDos {
+      font-size: 1.8rem;
+      color: #313131;
+      text-align: justify;
+      line-height: 160%; }
+
+.margen_nosotros {
+  margin-bottom: 20%; }
+
+.gridNosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  padding-left: 5%;
+  margin: 0%; }
+
+.gridNosotros-texto {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #fff;
+  font-size: 2.3rem;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: left; }
+
+.gridNosotros-textodos {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: black;
+  font-size: 2.3rem;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: left; }
+
+.grid-elemento {
+  padding-left: 5%; }
+
+.grid-padding {
+  padding-bottom: 5%; }
+
+.imagenuno_nosotros {
+  padding-bottom: 4%;
+  padding-top: 2%; }
+
+.container-fluid {
+  padding: 0%;
+  margin: 0%; }
 
 .sectionBlog {
   display: flex;
@@ -384,8 +489,12 @@ footer {
     font-size: 3rem;
     padding-left: 10%;
     padding-right: 10%; }
+  .sectionGeneral .p_index {
+    font-size: 3rem;
+    padding-left: 10%;
+    padding-right: 10%; }
   .sectionGeneral .p_nosotros {
-    font-size: 5rem;
+    font-size: 3rem;
     padding-left: 5%;
     padding-right: 5%; }
   .sectionservicios div .p {
@@ -397,6 +506,15 @@ footer {
     width: 375px;
     height: 240px; } }
 
+/* 625px */
+@media screen and (min-width: 625px) {
+  .mainServicios .sectionuno-mainServicios .divuno-mainServicios {
+    padding-left: 4%;
+    padding-right: 4%; }
+  .mainServicios .sectiondos-mainServicios .divdos-mainServicios {
+    padding-left: 4%;
+    padding-right: 4%; } }
+
 /* 756px */
 @media screen and (min-width: 756px) {
   .sectionGeneral {
@@ -406,12 +524,17 @@ footer {
       padding-left: 14%;
       padding-right: 14%;
       margin-top: 6%; }
+    .sectionGeneral .p_index {
+      font-size: 4rem;
+      padding-left: 14%;
+      padding-right: 14%;
+      margin-top: 6%; }
+    .sectionGeneral .formulario-boton-index {
+      padding-bottom: 10%; }
     .sectionGeneral .p_nosotros {
-      font-size: 5rem; }
-  .mainServicios {
-    margin: 3%;
-    padding-left: 1%;
-    padding-right: 1%; }
+      font-size: 4rem; }
+  .margen_nosotros {
+    margin-bottom: 5%; }
   .sectionservicios {
     padding-right: 5%;
     padding-bottom: 0%;
@@ -449,6 +572,8 @@ footer {
 
 /*900PX*/
 @media (min-width: 900px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-weight: 500; }
   /*nosotros*/
   .descripcionPadre div .descripcionUno {
     font-size: 3.6rem; }
@@ -490,10 +615,18 @@ footer {
   .sectionGeneral .p_general, .sectionGeneral .p_nosotros {
     font-size: 6rem;
     padding-right: 10%;
-    padding-left: 10%;
+    padding-left: 10%; }
+  .sectionGeneral .margen_general {
     margin-bottom: 10%; }
+  .sectionGeneral .p_index {
+    font-size: 6rem;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-weight: 600; }
   .sectionGeneral .p_nosotros {
-    font-size: 5.3rem; }
+    font-size: 6rem; }
+  .margen_nosotros {
+    margin-bottom: 0%; }
   main .imagenesPrincipales div img {
     height: 313px; }
   main .imagenesPrincipales div p {
@@ -542,6 +675,8 @@ footer {
 @media (min-width: 1339px) {
   .sectionGeneral .p_general, .sectionGeneral .p_nosotros {
     font-size: 4.8rem; }
+  .sectionGeneral .p_index {
+    font-size: 4.8rem; }
   main .imagenesPrincipales div img {
     height: 290px; }
   .contacto-titulo {
@@ -552,9 +687,11 @@ footer {
 /*1440PX*/
 @media (min-width: 1440px) {
   .sectionGeneral .p_general, .sectionGeneral .p_nosotros {
-    font-size: 8.6rem; }
+    font-size: 7.4rem; }
+  .sectionGeneral .p_index {
+    font-size: 7.4rem; }
   .sectionGeneral .p_nosotros {
-    font-size: 7.5rem; }
+    font-size: 7.4rem; }
   nav .navPropio {
     font-size: 2.6rem; }
   .sectionservicios {
@@ -617,14 +754,14 @@ footer {
 
 @media screen and (min-width: 1593px) {
   .sectionGeneral .p_general, .sectionGeneral .p_nosotros {
-    font-size: 5.8rem; }
+    font-size: 7rem; }
   main .imagenesPrincipales div img {
     height: 350px; } }
 
 /*1819PX*/
 @media screen and (min-width: 1819px) {
   .sectionGeneral .p_general, .sectionGeneral .p_nosotros {
-    font-size: 6.5rem; }
+    font-size: 7.8rem; }
   main .imagenesPrincipales div img {
     height: 388px; }
   .blog-portada-img {
@@ -634,7 +771,7 @@ footer {
 /*2150PX*/
 @media screen and (min-width: 2150px) {
   .sectionGeneral .p_general, .sectionGeneral .p_nosotros {
-    font-size: 7.7rem; }
+    font-size: 10.5rem; }
   .sectionservicios .p {
     font-size: 9rem; }
   .blog-portada-img {
@@ -643,6 +780,10 @@ footer {
 
 /*2400PX*/
 @media screen and (min-width: 2400px) {
+  nav .navPropio {
+    font-size: 6rem; }
+  .img_logohipnosia {
+    width: 250%; }
   main .imagenesPrincipales div img {
     height: 550px; }
   main p {

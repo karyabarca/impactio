@@ -14,16 +14,6 @@ body {
 
 
 
-    .sectionGeneral {
-
-            .p_general {
-                font-size: 2.7rem;
-                margin-top: 20%;
-                text-align: center;
-                margin-bottom: 20%;
-            }
-        }
-
 
 
 ol,
@@ -31,7 +21,9 @@ ul {
     padding-left: 0rem;
 }
 
-
+.margen_general {
+    margin-bottom: 20%;
+}
 
 main {
 
@@ -81,4 +73,37 @@ section ul {
 
 em {
     font-style: italic;
+}
+
+
+.p_index {
+    margin-bottom: 0%;
+    font-size: 4rem;
+    margin-top: 20%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.boton_index {
+    display: inline-block;
+    padding: 9px 15px;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.15);
+        background-color: black;
+        color: white;
+    }
+}
+
+.formulario-boton-index {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20%;
+}
+
+.img_logohipnosia {
+    padding-left: 10%;
 }

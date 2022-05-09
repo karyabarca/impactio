@@ -1,11 +1,15 @@
 $colorPrincipal: #692dff;
 
 $estilosTitulos: (tFuente: 3rem,
+    tFuentedos: 4.2rem,
     tGrosor: 400,
     alineacion: left,
     abajo: 10%,
+    abajodos: 3%,
     arriba: 10%,
+    arribados: 3%,
     izquierda: 7%,
+    izquierdados: 1%,
     derecha: 7%,
     interlineado: 120%);
 
@@ -23,6 +27,13 @@ div {
     }
 }
 
+.titulosdos {
+    font-size: map-get($estilosTitulos, tFuentedos);
+    text-align: map-get($estilosTitulos, alineacion);
+    font-weight: map-get($estilosTitulos, tGrosor);
+    margin-bottom: map-get($estilosTitulos, abajodos);
+    margin-top: map-get($estilosTitulos, arribados);
+}
 
 
 $imgServicios: (ancho: 250px,
@@ -79,10 +90,23 @@ $imgServicios: (ancho: 250px,
     flex-direction: row;
 }
 
+
+.sectionGeneral {
+
+    .p_general {
+        font-size: 4rem;
+        margin-top: 20%;
+        text-align: center;
+        animation-duration: 2s;
+    }
+}
+
 .p_nosotros {
     @extend .p_general;
     font-weight: 600;
+
 }
+
 
 
 @mixin titulos {

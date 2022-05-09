@@ -72,8 +72,14 @@
             padding-right: 10%;
         }
 
+        .p_index {
+            font-size: 3rem;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
         .p_nosotros {
-            font-size: 5rem;
+            font-size: 3rem;
             padding-left: 5%;
             padding-right: 5%;
         }
@@ -107,7 +113,34 @@
 
 
 
+/* 625px */
+
+@media screen and (min-width: 625px) {
+    .mainServicios {
+
+        .sectionuno-mainServicios {
+            .divuno-mainServicios {
+                padding-left: 4%;
+                padding-right: 4%;
+            }
+
+        }
+
+
+        .sectiondos-mainServicios {
+
+            .divdos-mainServicios {
+                padding-left: 4%;
+                padding-right: 4%;
+            }
+
+        }
+    }
+}
+
 /* 756px */
+
+
 
 
 
@@ -123,17 +156,28 @@
             margin-top: 6%;
         }
 
-        .p_nosotros {
-            font-size: 5rem;
+        .p_index {
+            font-size: 4rem;
+            padding-left: 14%;
+            padding-right: 14%;
+            margin-top: 6%;
         }
 
+        .formulario-boton-index {
+            padding-bottom: 10%;
+        }
+
+        .p_nosotros {
+            font-size: 4rem;
+        }
     }
 
-    .mainServicios {
-        margin: 3%;
-        padding-left: 1%;
-        padding-right: 1%;
+
+    .margen_nosotros {
+        margin-bottom: 5%;
     }
+
+
 
     .sectionservicios {
         padding-right: 5%;
@@ -178,8 +222,8 @@
     .sectionBlog {
         padding-right: 10px;
         padding-left: 10px;
-
     }
+
 
     .blog-portada-img {
         width: 330px;
@@ -198,6 +242,12 @@
 /*900PX*/
 
 @media (min-width: 900px) {
+
+    .navbar-light .navbar-nav .nav-link {
+        font-weight: 500;
+    }
+
+
 
     /*nosotros*/
     .descripcionPadre {
@@ -268,14 +318,30 @@
             font-size: 6rem;
             padding-right: 10%;
             padding-left: 10%;
-            margin-bottom: 10%;
 
+        }
+
+        .margen_general {
+            margin-bottom: 10%;
+        }
+
+        .p_index {
+            font-size: 6rem;
+            padding-right: 10%;
+            padding-left: 10%;
+            font-weight: 600;
         }
 
         .p_nosotros {
-            font-size: 5.3rem;
+            font-size: 6rem;
         }
     }
+
+
+    .margen_nosotros {
+        margin-bottom: 0%;
+    }
+
 
     main {
         .imagenesPrincipales {
@@ -401,6 +467,10 @@
         .p_general {
             font-size: 4.8rem;
         }
+
+        .p_index {
+            font-size: 4.8rem;
+        }
     }
 
     main {
@@ -428,11 +498,15 @@
 @media (min-width: 1440px) {
     .sectionGeneral {
         .p_general {
-            font-size: 8.6rem;
+            font-size: 7.4rem;
+        }
+
+        .p_index {
+            font-size: 7.4rem;
         }
 
         .p_nosotros {
-            font-size: 7.5rem;
+            font-size: 7.4rem;
         }
     }
 
@@ -550,6 +624,7 @@
             padding-right: 10.7%;
             padding-left: 10.7%;
         }
+
     }
 
 }
@@ -580,7 +655,7 @@
     .sectionGeneral {
 
         .p_general {
-            font-size: 5.8rem;
+            font-size: 7rem;
         }
     }
 
@@ -605,7 +680,7 @@
     .sectionGeneral {
 
         .p_general {
-            font-size: 6.5rem;
+            font-size: 7.8rem;
 
         }
     }
@@ -634,7 +709,7 @@
 
     .sectionGeneral {
         .p_general {
-            font-size: 7.7rem;
+            font-size: 10.5rem;
         }
     }
 
@@ -654,6 +729,17 @@
 /*2400PX*/
 
 @media screen and (min-width: 2400px) {
+
+    nav {
+        .navPropio {
+            font-size: 6rem;
+        }
+    }
+
+    .img_logohipnosia {
+        width: 250%;
+    }
+
 
 
     main {
