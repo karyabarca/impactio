@@ -1,3 +1,75 @@
+/* Reset de estilos para mayor consistencia */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header nav li {
+    margin-right: 20px;
+}
+
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ #gmp-map {
+    width: 500px; /* Ancho en porcentaje */
+    height: 300px; /* Altura fija en píxeles o en porcentaje */
+    margin: auto; /* Centrar horizontalmente */
+}
+
+/* Estilos de las secciones */
+.section {
+    height: 100vh; /* Establece la altura de la sección al 100% del viewport */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el contenido de texto */
+    flex-direction: column; /* Alinea el contenido verticalmente */
 }

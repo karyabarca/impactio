@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impactio - Ubicación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClvExSi09mrdhNtn9bfdTv_bf4izLJ6uY&callback=initMap&libraries=&v=weekly"
+        defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="./app.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="ubicacion" class="section">
+        <div class="content">
+            <h2 class="subtitle">Ubicación</h2>
+            <div id="gmp-map"></div>
+            <p class="location-description">
+                ¡Te damos la bienvenida a nuestra ubicación en Mérida, Yucatán! Nuestra oficina está estratégicamente ubicada en la Calle 45, Colonia Cordemex, CP 97310. Nos encontramos en el corazón de la ciudad, lo que nos permite estar cerca de nuestros clientes y líderes políticos a los que apoyamos con nuestras estrategias innovadoras de marketing.
+                <br><br>
+                Nuestro equipo de profesionales está listo para atenderte y ayudarte a potenciar tu presencia política en el mundo digital. Si tienes alguna pregunta o deseas concertar una reunión, no dudes en contactarnos. ¡Esperamos verte pronto en Impactio!
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Impactio - Forjando Líderes Políticos en el Mundo Digital</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Agrega el script de Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClvExSi09mrdhNtn9bfdTv_bf4izLJ6uY&callback=initMap"
+        async defer></script>
+    <script>
+        "use strict";
+
+        function initMap() {
+            const myLatLng = {
+                lat: 21.037988662719727,
+                lng: -89.62582397460938
+            };
+            const map = new google.maps.Map(document.getElementById("gmp-map"), {
+                zoom: 14,
+                center: myLatLng,
+                fullscreenControl: false,
+                zoomControl: true,
+                streetViewControl: false
+            });
+            new google.maps.Marker({
+                position: myLatLng,
+                map,
+                title: "My location"
+            });
+        }
+    </script>
+</body>
+
+</html>
