@@ -1,3 +1,49 @@
+#loader {
+  /* Centra horizontalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Centra verticalmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(251, 250, 255, 0.8); /* Fondo semi-transparente */
+}
+
+/* Estilos para el ícono de carga */
+#loader i {
+  font-size: 100px; /* Tamaño del ícono */
+  color: #002873; /* Color del ícono */
+}
+
+#saludo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Fondo blanco */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Asegura que esté en la parte superior */
+}
+
+#saludo h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #020873;
+}
+
+#saludo p {
+  font-size: 18px;
+  color: #020873;
+}
 
 
 div .titulos {
@@ -404,25 +450,21 @@ a {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-}
-
-.descripcionPadre .bloque-nosotros-uno {
   margin: 5%;
 }
 
+
 .descripcionPadre .bloque-nosotros-uno .descripcionDos {
-  font-size: 2rem;
+  font-size: 1.5em;
   color: #313131;
   text-align: justify;
   line-height: 160%;
 }
 
-.descripcionPadre .bloque-nosotros-dos {
-  margin: 5%;
-}
+
 
 .descripcionPadre .bloque-nosotros-dos .descripcionDos {
-  font-size: 2rem;
+  font-size: 1.5em;
   color: #313131;
   text-align: justify;
   line-height: 160%;
@@ -439,7 +481,6 @@ a {
   color: white;
   background-color: black;
   padding-left: 5%;
-  margin: 0%;
 }
 
 .gridNosotros-texto {
@@ -1161,4 +1202,38 @@ footer ul li .imgfooter {
   .descripcionPadre div .descripcionDos {
     font-size: 4rem;
   }
+}
+
+
+/*GALERÍA*/
+/* Estilo para el modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  cursor: pointer;
+}
+
+/* Estilo para la imagen en el modal */
+.modal img {
+  max-width: 90%; /* Ajusta el tamaño máximo de la imagen */
+  max-height: 90vh; /* Ajusta la altura máxima de la imagen */
+  object-fit: contain; /* Escala la imagen para que quepa en el contenedor */
+}
+
+/* Estilo para cerrar el modal al pasar el ratón */
+.modal:hover {
+  cursor: pointer;
+}
+
+/* Estilo para el cuerpo del documento (para desactivar el desplazamiento cuando se abre el modal) */
+body.modal-open {
+  overflow: hidden;
 }
